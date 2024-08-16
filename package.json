@@ -1,0 +1,37 @@
+{
+  "name": "task-management-app-back-end-side",
+  "version": "1.0.0",
+  "description": "task management app",
+  "main": "Server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/Server.js",
+    "server": "nodemon backend/Server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "todo",
+    "app"
+  ],
+  "author": "Praveen kumar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^6.13.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
