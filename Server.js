@@ -17,7 +17,7 @@ const app = express();
 app.use(logger('div'));
 app.use(cors({
     credentials: true,
-    origin: ['http://localhost:5173']
+    origin: ['https://praveen-task-project.netlify.app']
 }));
 
 app.use(express.urlencoded({ extended: false }));
